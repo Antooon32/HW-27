@@ -1,0 +1,39 @@
+.aside {
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    top: 0;
+    left: -260px;
+    background-color: grey;
+    transition: transform 250ms ease-in-out;
+}
+
+.aside:hover {
+    transform: translateX(260px);
+}
+
+.title {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 208px;
+    transform: rotate(90deg);
+    white-space: pre;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: square;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.item:hover .link,
+.item:hover {
+    color: yellow;
+}
